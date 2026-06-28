@@ -13,8 +13,6 @@ Department of Computer Science and Engineering, East West University, Dhaka, Ban
 
 This repository contains the complete code for preprocessing, model training, fusion experiments, ablation study, ViT embedding probes, and corrected statistical analysis.
 
-The central finding is that ViT-B/16 facial video embeddings increase within-subject EEG emotion recognition (largest effect at the quadrant level) but reduce cross-subject performance under leave-one-subject-out (LOSO) evaluation. Probing the facial embeddings shows they are organised primarily by participant identity rather than by affect, with affect-related information not transferring to unseen participants.
-
 ---
 
 ## Repository Structure
@@ -99,13 +97,13 @@ Ablation variants: `flat_gcn`, `no_band_attn`, `struct_only`, `no_hjorth`
 
 Run on your preprocessed fusion dataset (22 real-video subjects). Requires `scikit-learn`, `numpy`, `torch`. See Methods Section 3 of the paper for the exact probe code.
 
-### Step 5 — Corrected Statistics
+### Step 5 — Statistics
 
 Run in a Kaggle notebook (paste as a cell, not from command line):
 
 ```python
 RESULTS = "/kaggle/input/your-results-dataset/all_results"
-OUT     = "/kaggle/working/corrected_statistics_all_comparisons.csv"
+OUT     = "/kaggle/working/statistics_all_comparisons.csv"
 ```
 
 Then run `stats.ipynb` with those paths set at the top of the file. Outputs a CSV with raw p-values, Holm-corrected p-values, Benjamini–Hochberg-corrected p-values, and matched-pairs rank-biserial effect sizes for all comparisons. These are the numbers reported in Tables 4, 5, and 6 of the paper.
