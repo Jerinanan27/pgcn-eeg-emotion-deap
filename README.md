@@ -121,5 +121,5 @@ Pre-trained ViT-B/16 weights: subject to the license of the source repository us
 
 ## Contact
 
-Jerin Anan Proma — jerinanan27@gmail.com  
+Jerin Anan Proma — jarinananproma@gmail.com  
 East West University, Department of CSE, Dhaka, Bangladesh
