@@ -1,0 +1,12 @@
+torch
+torch_geometric
+numpy
+scipy
+pandas
+scikit-learn
+h5py
+joblib
+tqdm
+matplotlib
+# only for analysis/identify_vit.py:
+# opencv-python-headless timm transformers torchvision
