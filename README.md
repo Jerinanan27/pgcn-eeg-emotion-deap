@@ -2,7 +2,7 @@
 
 Code for the paper:
 
-**Facial video improves within-subject but not cross-subject EEG emotion recognition under leakage-free evaluation on DEAP**
+**Within and cross-participant evaluation of fusion between EEG and facial video for predicting affect ratings on DEAP**
 
 Jerin Anan Proma, Fatema Tuz Zannat, Mohammed Shawqi Aftab, Shamim H. Ripon
 Department of Computer Science and Engineering, East West University, Dhaka, Bangladesh
@@ -31,6 +31,7 @@ pgcn-eeg-emotion-deap/
 │   ├── verify_data.py             checks on the saved datasets
 │   ├── where_are_missing_videos.py  partition of the trials without video
 │   ├── identify_vit.py            optional: identifies the ViT recipe (needs the DEAP videos)
+│   ├── identify_vit_from_h5.py    optional: tests candidate ViT weights using only the stored embeddings
 │   ├── make_tables.py             all result tables of the paper (LaTeX)
 │   └── make_figures.py            result figures of the paper
 ├── notebooks/
